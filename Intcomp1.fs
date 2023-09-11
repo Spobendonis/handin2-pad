@@ -422,4 +422,14 @@ let exp2 = Let([("x", CstI(2))], Prim("+", Var("x"), Var("y")));;
 
 // Exercise 2.4
 
-let sinstrToInt = SCstI(0)
+let sinstrToInt sinstr = 
+  match sinstr with
+  | SCstI x -> [0; x;]
+  | SVar x -> [1; x;]
+  | SAdd -> [2;]
+  | SSub -> [3;]
+  | SMul -> [4;]
+  | SPop -> [5;]
+  | SSwap -> [6;]
+
+let assemble sinstrl = List.fold (fun acc sinstr -> acc @ sinstrToInt sinstr) [] sinstrl
