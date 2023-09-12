@@ -33,10 +33,13 @@ Given the regular expression `a∗(a|b)aa:`
 - Construct an equivalent NFA using the method in section 2.4:
   - ![NFA Diagram](NFA.svg)
 - Convert this NFA to a DFA using algorithm 2.3
-  State | a | b | go to
-  ---|---|---|---
-     s0 | {} | {} | {}
-     s1 | {} | {} | {}
+  State | E-Closure | a | b | go to
+  ---|--- |---|---|---
+     s0 | {1, 2, 3} | {1, 4} | {5} | {s0, s1, s2}
+     s1 | {4} | {6} | {} | {s3}
+     s2 | {5} | {6} | {} | {s3}
+     s3 | {6} | {7} | {} | {**s4**}
+     s4 | {7} | {} | {} | {}
   - ![DFA Diagram](DFA.svg)
 
 # HelloLex questions
