@@ -13,7 +13,7 @@ Resulting NFA:
 ![NFA Diagram](NFA3_2.svg)
 
 Resulting DFA:
-
+![DFA Diagram](DFA3_2.svg)
 
 # BCD Questions
 
@@ -39,7 +39,7 @@ Given the regular expression `a∗(a|b)aa:`
      s1 | {4} | {6} | {} | {s3}
      s2 | {5} | {6} | {} | {s3}
      s3 | {6} | {7} | {} | {**s4**}
-     s4 | {7} | {} | {} | {}
+     **s4** | {7} | {} | {} | {}
   - ![DFA Diagram](DFA.svg)
 
 # HelloLex questions
