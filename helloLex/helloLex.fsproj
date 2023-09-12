@@ -6,7 +6,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Include="hello.fsl" />
     <Compile Include="hello.fs" />
   </ItemGroup>
 
