@@ -45,4 +45,17 @@ Given the regular expression `a∗(a|b)aa:`
 # HelloLex questions
 
 ## Question 1
+
+The regex is `[0-9]`
+
+## Question 2
 When running `fslex --univode hello.fsl` the file `hello.fs` is generated. 3 states.
+
+## Question 3
+(Insert screenshot?)
+
+## Question 4
+
+
+
+## Question 5
