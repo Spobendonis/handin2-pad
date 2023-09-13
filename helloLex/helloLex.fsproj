@@ -9,4 +9,9 @@
     <Compile Include="hello.fs" />
   </ItemGroup>
 
+  <ItemGroup>
+      <Reference Include=".\FsLexYacc.Runtime.dll"/>
+      <Reference Include=".\FSharp.Core.dll"/>
+  </ItemGroup>
+
 </Project>
