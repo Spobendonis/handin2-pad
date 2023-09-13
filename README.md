@@ -44,18 +44,23 @@ Given the regular expression `a∗(a|b)aa:`
 
 # HelloLex questions
 
+All files relevant to this questions can be found in the `helloLex` folder
+
 ## Question 1
 
-The regex is `[0-9]`
+The regex is `[0-9]`. The semantic value is a single whole number between 0 and 9.
 
 ## Question 2
-When running `fslex --univode hello.fsl` the file `hello.fs` is generated. 3 states.
+When running `fslex --unicode hello.fsl` the file `hello.fs` is generated.
+3 states.
 
 ## Question 3
-(Insert screenshot?)
+As can be seen, we compiled a working `hello.exe` file.
 
 ## Question 4
-
-
+We created a `hello2.fsl` file, where we updated the regex to be `['0'-'9']+`.
+We then generated the lexer and compiled it as `hello2.exe`.
 
 ## Question 5
+We extended it with the regex provided in the question.
+We then generated the lexer and compiled it as `hello3.exe`.
